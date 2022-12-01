@@ -1,10 +1,16 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     background-color: rgba(176,139,198,255);
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .mobile {
@@ -33,7 +39,7 @@ img {
 .navList {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     text-align: center;
     padding: 0px;
     color: gray;
@@ -60,3 +66,5 @@ li {
     text-align: center;
     margin-top: 3px;
 }
+
+
